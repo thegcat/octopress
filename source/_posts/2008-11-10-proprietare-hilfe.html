@@ -15,12 +15,14 @@ title: "Proprietäre Hilfe"
 ---
 <p>Ich scheue ja normalerweise nicht davor proprietäre Software zu benutzen, und obwohl ich bei gleichem Funktionsumfang eher zu freier Software tendiere, benutze ich auch tagtäglich nicht-freie Programme. Eine Sache die mir bei freier Software sehr gefällt ist die (meistens) ausführliche Dokumentation.</p>
 
-<p>Jene Dokumentation hat mir heute auf der Arbeit bitter gefehlt: Wir setzen in vielen unserer Server Hardware-RAID Controller ein, und jene haben (leider) keine öffentlich freigegebenen Schnittstellen, weswegen man die vom Hersteller mitgelieferte Software benutzen muss. Die Hilfe eines solchen Programms, was ich heute benutzen wollte, sieht so aus:
-<pre>MegaCli -help</p>
+<p>Jene Dokumentation hat mir heute auf der Arbeit bitter gefehlt: Wir setzen in vielen unserer Server Hardware-RAID Controller ein, und jene haben (leider) keine öffentlich freigegebenen Schnittstellen, weswegen man die vom Hersteller mitgelieferte Software benutzen muss. Die Hilfe eines solchen Programms, was ich heute benutzen wollte, sieht so aus:</p>
 
-<p>      MegaCLI SAS RAID Management Tool  Ver 1.01.09 May 25, 2006</p>
+``` plain
+MegaCli -help
 
-<p>    (c)Copyright 2006, LSI Logic Corporation, All Rights Reserved.
+      MegaCLI SAS RAID Management Tool  Ver 1.01.09 May 25, 2006
+
+    (c)Copyright 2006, LSI Logic Corporation, All Rights Reserved.
 MegaCli -v
 MegaCli -help|-h|?
 MegaCli -adpCount
@@ -37,7 +39,9 @@ MegaCli -AdpGetProp CacheFlushInterval | RebuildRate | PatrolReadRate | BgiRate
 MegaCli -AdpAllInfo -aN|-a0,1,2|-aALL
 MegaCli -AdpGetTime -aN|-a0,1,2|-aALL
 MegaCli -AdpSetTime yyyymmdd hh:mm:ss -aN
-MegaCli -AdpSetVerify -f fileName -aN|-a0,1,2|-aALL</pre>
-Danach kommt noch ein bisschen Kram, aber das sieht alles genauso toll aus. Andere Doku habe ich nicht gefunden: Keine man-Page, keine Dokumentation irgendwo online, bzw. dann nur Stichpunkte um bestimmte "gängige" Operationen durchzuführen. Im Endeffekt habe ich den Server ausgemacht und den RAID Controller im BIOS konfiguriert, weil die Oberfläche da etwas übersichtlicher ist, aber dadurch hatten wir im Endeffekt unnötige Downtime...</p>
+MegaCli -AdpSetVerify -f fileName -aN|-a0,1,2|-aALL
+```
+
+<p>Danach kommt noch ein bisschen Kram, aber das sieht alles genauso toll aus. Andere Doku habe ich nicht gefunden: Keine man-Page, keine Dokumentation irgendwo online, bzw. dann nur Stichpunkte um bestimmte "gängige" Operationen durchzuführen. Im Endeffekt habe ich den Server ausgemacht und den RAID Controller im BIOS konfiguriert, weil die Oberfläche da etwas übersichtlicher ist, aber dadurch hatten wir im Endeffekt unnötige Downtime...</p>
 
 <p>Liebe Software-Hersteller: Wir wollen anständige Dokumentation!</p>

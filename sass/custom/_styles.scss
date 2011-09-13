@@ -6,10 +6,13 @@ body > header {background: none;}
 
 dl.interview {
   dt {font-weight: bold;}
-  dd {margin-left: 1em;}
-  .interviewer {font-style: italic;}}
+  dt:after {content: ":";}
+  dd {margin-left: 1em;}}
 
 article section.gallery {
-  @include pie-clearfix;}
+  @include pie-clearfix;
+  margin-bottom: 1.5em;}
+
+span.update {font-style: italic;}
 
 @import "./slimbox2";
