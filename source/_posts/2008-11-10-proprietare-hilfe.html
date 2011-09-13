@@ -1,0 +1,43 @@
+--- 
+author: "Felix Schäfer"
+categories: 
+  - Computer
+  - Software
+  - Dokumentation
+  - Proprietär
+  - Rant
+  - Arbeit
+comments: true
+date: 2008-11-10 12:03:19 +00:00
+excerpt: "Fehlende Dokumentation bei einer Software die für teure Hardware nötig ist nervt!"
+layout: post
+title: "Proprietäre Hilfe"
+---
+<p>Ich scheue ja normalerweise nicht davor proprietäre Software zu benutzen, und obwohl ich bei gleichem Funktionsumfang eher zu freier Software tendiere, benutze ich auch tagtäglich nicht-freie Programme. Eine Sache die mir bei freier Software sehr gefällt ist die (meistens) ausführliche Dokumentation.</p>
+
+<p>Jene Dokumentation hat mir heute auf der Arbeit bitter gefehlt: Wir setzen in vielen unserer Server Hardware-RAID Controller ein, und jene haben (leider) keine öffentlich freigegebenen Schnittstellen, weswegen man die vom Hersteller mitgelieferte Software benutzen muss. Die Hilfe eines solchen Programms, was ich heute benutzen wollte, sieht so aus:
+<pre>MegaCli -help</p>
+
+<p>      MegaCLI SAS RAID Management Tool  Ver 1.01.09 May 25, 2006</p>
+
+<p>    (c)Copyright 2006, LSI Logic Corporation, All Rights Reserved.
+MegaCli -v
+MegaCli -help|-h|?
+MegaCli -adpCount
+MegaCli -AdpSetProp {CacheFlushInterval -val}|{ RebuildRate -val}
+    |{PatrolReadRate -val}|{BgiRate -val}|{CCRate -val}
+    |{ReconRate -val}|{SpinupDriveCount -val}|{SpinupDelay -val}
+    |{CoercionMode -val}|{ClusterEnable -val}|{PredFailPollInterval -val}
+    |{BatWarnDsbl -val} |{EccBucketSize -val} | {EccBucketLeakRate -val}
+    | AlarmEnbl | AlarmDsbl | AlarmSilence -aN|-a0,1,2|-aALL
+MegaCli -AdpGetProp CacheFlushInterval | RebuildRate | PatrolReadRate | BgiRate
+    | CCRate | ReconRate | SpinupDriveCount | SpinupDelay | CoercionMode
+    | PredFailPollInterval | EccBucketSize | EccBucketLeakRate | EccBucketCount
+    | ClusterEnable | BatWarnDsbl | AlarmDsply -aN|-a0,1,2|-aALL
+MegaCli -AdpAllInfo -aN|-a0,1,2|-aALL
+MegaCli -AdpGetTime -aN|-a0,1,2|-aALL
+MegaCli -AdpSetTime yyyymmdd hh:mm:ss -aN
+MegaCli -AdpSetVerify -f fileName -aN|-a0,1,2|-aALL</pre>
+Danach kommt noch ein bisschen Kram, aber das sieht alles genauso toll aus. Andere Doku habe ich nicht gefunden: Keine man-Page, keine Dokumentation irgendwo online, bzw. dann nur Stichpunkte um bestimmte "gängige" Operationen durchzuführen. Im Endeffekt habe ich den Server ausgemacht und den RAID Controller im BIOS konfiguriert, weil die Oberfläche da etwas übersichtlicher ist, aber dadurch hatten wir im Endeffekt unnötige Downtime...</p>
+
+<p>Liebe Software-Hersteller: Wir wollen anständige Dokumentation!</p>

@@ -1,0 +1,22 @@
+--- 
+author: "Felix Schäfer"
+categories: 
+  - Computer
+  - RoR
+  - rails
+  - ruby
+  - "ruby on rails"
+  - plugin
+  - TDD
+  - Agile
+  - MVC
+  - RFC822
+comments: true
+date: 2009-03-27 15:04:06 +00:00
+excerpt: "validates_email_format_of ist ein Plugin für Ruby on Rails, um die richtige Formatierung einer Emailadresse laut verschiedenen RFCs, unter Anderen RFC822, zu testen."
+layout: post
+title: validates_email_format_of
+---
+<p>Ich spiele sowohl privat als auch beruflich seit ein paar Wochen mit Ruby on Rails (RoR) rum, und ich muss sagen, dass ich sowohl die mehr oder minder mit eingebauten Test Driven Development (TDD) und Agile Development (Agile) Methoden ganz toll finde. Dazu kommt noch die strikte Model-View-Controller (MVC) Trennung, die ich so stark eigentlich noch nirgends in einem Framework gesehen habe (die Mac OS X Entwicklungsumgebung kommt nah dran, aber da ist eigentlich nur der View stark von Models und Controller getrennt).</p>
+
+<p>RoR bietet viele Möglichkeiten Eingaben zu prüfen, z.B. ob überhaupt ein Datenfeld gefüllt ist, oder ob sie einem bestimmten Format oder einer bestimmten Länge entsprechen, aber keine einfache Möglichkeit, um das Format einer Emailadresse zu überprüfen. Es gibt zwar ein Haufen Ansätze mit Regular Expressions, diese sind aber zu 99,9% nicht mit den Standards kompatibel. Dafür habe ich das <a title="Zur Seite des Rails Plugins" href="http://code.dunae.ca/validates_email_format_of.html">validates_email_format_of Rails Plugin</a> von <a title="Alex Dunae" href="http://dunae.ca/">Alex Dunae</a> gefunden, was wie der Name es vermuten lässt eine validates_email_format_of Methode bereitstellt, mit der man die Richtigkeit einer Emailadresse gegen die gängigsten Standards bzw. RFCs testen kann.</p>
