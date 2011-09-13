@@ -1,2 +1,13 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+html {background: image-url('exclusive_paper.gif');}
+body > header {background: none;}
+
+dl.interview {
+  dt {font-weight: bold;}
+  dd {margin-left: 1em;}
+  .interviewer {font-style: italic;}}
+
+article section.gallery {
+  @include pie-clearfix;}
