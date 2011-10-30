@@ -1,0 +1,23 @@
+---
+author: "Felix Schäfer"
+layout: post
+title: "thegcat.net - Blog Relaunch"
+date: 2011-10-30 13:10
+comments: true
+categories:
+  - Blog
+---
+
+I'm at that point again. Relaunching the blog. New theme, new engine, hopefully more content, probably more technical content, probably more english than german, new address. More of a fresh start with imported history than a continuation really.
+
+Blogging didn't really work for me in the past. I don't know if it was because of the engine (wordpress), because I didn't think I have enough interesting things to share, or that the idea-to-blog hurdle is higher than just ranting on twitter ("I still do that, by the way…":https://twitter.com/thegcat), but I tried twice in the past and it didn't stick.
+
+So what to expect here? As I said, the content will probably become more technical, the main topics will probably be:
+* ChiliProject (who woulda thought?),
+* Rants and discussions on Rails, Ruby and everything around it in general,
+* Maybe some things about conferences I attend (and maybe later speak at),
+* Some rare posts about being one of two remote employees in an otherwise one-office software development shop.
+
+A last word of caution: this site still has some rough edges, no comments, no RSS feeds for categories, and so on. I decided to "relaunch" anyway as I have completed importing and converting posts from my previous (wordpress) blog more than 6 weeks ago and haven't found the time to take care of the few itches I still want to scratch. 80% there is still better than not there at all :-)
+
+Enjoy!
