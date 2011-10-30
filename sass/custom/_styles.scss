@@ -15,8 +15,6 @@ article section.gallery {
 
 span.update {font-style: italic;}
 
-aside[role="sidebar"] img {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;}
+aside[role="sidebar"] img {margin-bottom: 0.5em !important;}
 
 @import "./slimbox2";
