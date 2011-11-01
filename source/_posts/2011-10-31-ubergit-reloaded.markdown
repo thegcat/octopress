@@ -9,21 +9,35 @@ categories:
   - Uberspace
 ---
 
+__Update (1.11.11 22:42)__: [Jonas von den Ubernauten][] hat mich drauf hingewiesen,
+dass man schon mittels gitolite ein Repository über ssh mit mehreren Nutzern
+teilen kann, den Post habe ich entsprechend korrigiert. Weiterhin bietet grack
+keine wirklichen Vorteile gegenüber dem git-eigenen `git-http-backend`, den hatte ich
+allerdings "vergessen" weil er als ich auf einem anderen Server einen git
+smart-http installiert habe nicht in Frage gekommen war, grack schon.
+
+[Jonas von den Ubernauten]: http://jonaspasche.com/app/ "Jonas Pasche's Homepage"
+
 [Kahlil Lechelt][] hat vor ein paar Monaten in seinem Post [UberGit][] schon
 gezeigt, wie man [Uberspace][] als privaten git Server über ssh benutzen kann.
 Diese Methode hat allerdings den Nachteil, dass man Anderen keinen Zugriff auf
 seine Repositories oder mehreren Leuten Schreibzugriff auf ein gemeinsam-genutztes
-Repository geben kann. Das [Uberspace Wiki][] beschreibt auch noch, wie man
-[ein Repository über http veröffentlichen][] kann, da ist der Schreibzugriff
+Repository geben kann. Das [Uberspace Wiki][] beschreibt weiterhin, wie man
+[gitolite installieren][] kann und damit über ssh mehreren Nutzern Lese- und/oder
+Schreibzugriff auf Repositories geben kann, bzw. wie man
+[ein Repository über http veröffentlichen][] kann, hier ist der Schreibzugriff
 allerdings ausgeschlossen.
 
 [Kahlil Lechelt]: http://kahlil.co/ "Kahlil Lechelts Blog"
 [UberGit]: http://kahlil.co/2011/07/10/ubergit/ "UberGit"
 [Uberspace]: http://uberspace.de/ "Uberspace - Hosting on asteroids"
 [Uberspace Wiki]: https://uberspace.de/dokuwiki "Uberspace Wiki"
+[gitolite installieren]: http://uberspace.de/dokuwiki/cool:gitolite "gitolite auf Uberspace installieren"
 [ein Repository über http veröffentlichen]: https://uberspace.de/dokuwiki/development:git#oeffentlich_bereitstellen "git Repository auf Uberspace über http bereitstellen"
 
-Nun, dieser letzter Punkt lässt sich mittels [grack][] lösen. grack ist ein in
+Nun, wem unwohl ist anderen Benutzern Zugriff auf sein ssh zu geben, die
+ssh-Konfiguration für die Endanwender zu kompliziert ist und über http
+auch schreiben können möchte, dem verschafft [grack][] Abhilfe. grack ist ein in
 Ruby geschriebener Wrapper um git selbst, der einen [git-smart-http][]-Server
 über den man Repositories lesen und schreiben kann bereitstellt.
 
