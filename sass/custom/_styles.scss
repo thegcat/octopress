@@ -17,4 +17,8 @@ span.update {font-style: italic;}
 
 aside[role="sidebar"] img {margin-bottom: 0.5em !important;}
 
+aside[role="sidebar"] ul.upcoming_attendencies {
+  img {border: none; box-shadow: none;}
+  a {white-space: normal;}}
+
 @import "./slimbox2";
